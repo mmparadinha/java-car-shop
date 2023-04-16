@@ -13,6 +13,8 @@ import com.car_shop.api.dto.CarDTO;
 import com.car_shop.api.model.Car;
 import com.car_shop.api.repository.CarRepository;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/cars")
 public class CarController {
@@ -26,7 +28,7 @@ public class CarController {
   }
 
   @PostMapping
-  public void create(@RequestBody CarDTO req) {
+  public void create(@RequestBody @Valid CarDTO req) {
     repository.save(new Car(req));
   }
 }
