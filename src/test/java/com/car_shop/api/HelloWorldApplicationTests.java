@@ -1,10 +1,10 @@
-package com.driven.helloworld;
+package com.car_shop.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HelloWorldApplicationTests {
+class CarShopApplicationTests {
 
 	@Test
 	void contextLoads() {

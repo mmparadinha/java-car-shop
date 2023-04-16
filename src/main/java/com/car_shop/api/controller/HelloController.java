@@ -1,4 +1,4 @@
-package com.carShop.api.controller;
+package com.car_shop.api.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +10,6 @@ public class HelloController {
 
   @GetMapping
   public String HelloSpring() {
-    return "Olá, Spring!";
+    return "Olá, Spring tá on!";
   }
 }
